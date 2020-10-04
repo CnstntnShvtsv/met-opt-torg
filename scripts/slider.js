@@ -25,7 +25,19 @@ var swiper02 = new Swiper('.slider-02 .swiper-container', {
     },
 
     breakpoints: {
-        1024: {
+        480: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 1,
+        },
+        1080: {
             slidesPerView: 2,
         },
         1280: {
