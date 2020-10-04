@@ -55,30 +55,34 @@
                     <div class="item-left">
                         <div class="custom-select">
                             <select name="" id="">
-                                <option value="">Пермь</option>
-                                <option value="">Москва</option>
-                                <option value="">Севастополь</option>
+                                <option>Пермь</option>
+                                <option>Пермь</option>
+                                <option>Москва</option>
+                                <option>Севастополь</option>
                             </select>
                         </div>
-                        <div class="info">+7 342 246 25 44
-                            <img src="images/icon_call_primary.svg">
-                        </div>
+                        <a class="info" href="tel:+73422462544">
+                            +7 342 246-25-44
+                            <img src="images/icon_call_primary.svg" alt="telephone">
+                        </a>
                         <div class="info">пн-пт 09:00-18:00
                             <img src="images/icon_clock_primary.svg">
                         </div>
-                        <div class="info">Култаево
+                        <a class="info"
+                            href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                            target="_blank">Култаево
                             <img src="images/icon_lockation_primary.svg">
-                        </div>
+                        </a>
                     </div>
                     <div class="item-right">
                         <a class="social-link" href="#">
                             <img src="images/icon_e-mail_primary.svg" alt="e-mail">
                         </a>
                         <a class="social-link" href="#">
-                            <img src="images/icon_social-fb_primary.svg" alt="e-mail">
+                            <img src="images/icon_social-fb_primary.svg" alt="facebook">
                         </a>
                         <a class="social-link" href="#">
-                            <img src="images/icon_social-wa_primary.svg" alt="e-mail">
+                            <img src="images/icon_social-wa_primary.svg" alt="whatsapp">
                         </a>
                     </div>
                 </div>
@@ -89,14 +93,14 @@
                 <div class="items">
                     <img class="item-left" src="images/logo_colored.svg" alt="Логотип МетОптТорг">
                     <div class="item-right">
-                        <div class="info">
+                        <a class="info" href="#">
                             <img src="images/icon_checked_secondary.svg">
-                            <span>Серификаты и лицензии</span>
-                        </div>
-                        <div class="info">
+                            Серификаты и лицензии
+                        </a>
+                        <a class="info" href="#">
                             <img src="images/icon_checked_secondary.svg">
-                            <span>Диллерская сеть по РФ</span>
-                        </div>
+                            Диллерская сеть по РФ
+                        </a>
                         <a class="btn-call" href="#">Связаться</a>
                     </div>
                 </div>
@@ -251,9 +255,115 @@
                 </div>
             </div>
         </div>
+
+        <div class="customers">
+            <div class="container">
+                <div class="customers-items">
+                    <img src="images/logo_customer-01.png" alt="Логотип Лукойл">
+                    <img src="images/logo_customer-02.png" alt="Логотип РусГидро">
+                    <img src="images/logo_customer-03.png" alt="Логотип Интер РАО">
+                    <img src="images/logo_customer-04.png" alt="Логотип ГазПром">
+                    <img src="images/logo_customer-05.png" alt="Логотип МинОбороны РФ">
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="overlay"></div>
+            <h3>Отзывы</h3>
+            <div class="slider-03">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-text">
+                                <p>
+                                    Мы применяем современное оборудование, спецтехнику
+                                    и работаем по стандартам экологической безопасности. Профессионально работаем с
+                                    черным и
+                                    цветным металлом, кабелем, трубами, транспортом.
+                                </p>
+                                <span class="reviewer">Иван Иванов</span>
+                                <span class="reviewers-company">Лукойл</span>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi cupiditate.
+                                    Vero ex consequatur, molestias nostrum harum exercitationem voluptatibus,
+                                    laboriosam, voluptas sint ullam totam maxime!
+                                </p>
+                                <span class="reviewer">Петр Петров</span>
+                                <span class="reviewers-company">РусГидро</span>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minima perspiciatis
+                                    eos ullam omnis quo amet, similique nihil assumenda eius beatae rerum tempora
+                                    veritatis mollitia laboriosam, adipisci, fugiat explicabo facilis.
+                                </p>
+                                <span class="reviewer">Степан Степанов</span>
+                                <span class="reviewers-company">Газпром</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-items">
+                <div class="logo-slogan">
+                    <img src="images/logo_white.svg" alt="Логотпи МетОптТорг">
+                    <p>Надежный партнер
+                        на&nbsp;профессиональном
+                        рынке вторичных металлов</p>
+                </div>
+                <div class="menu">
+                    <h3 class="title">Меню</h3>
+                    <div class="menu-nav">
+                        <a class="nav-link" href="#">О компании</a>
+                        <a class="nav-link" href="#">Услуги</a>
+                        <a class="nav-link" href="#">Цена на лом</a>
+                        <a class="nav-link" href="#">Лицензия</a>
+                        <a class="nav-link" href="#">Отзывы</a>
+                        <a class="nav-link" href="#">Экология</a>
+                        <a class="nav-link" href="#">Контакты</a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3 class="title">Контакты</h3>
+                    <div class="contacts-nav">
+                        <a class="nav-link"
+                            href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                            target="_blank">
+                            <img src="images/icon_lockation_secondary.svg" alt="lockation">
+                            614520, г. Пермь, Пермский район,
+                            с. Култаево, ул. Романа Кашина, 89 (офис 24)
+                        </a>
+                        <a class="nav-link" href="tel:+73422462544">
+                            <img src="images/icon_call_secondary.svg" alt="telephone">
+                            +7 342 246-25-44
+                        </a>
+                        <a class="nav-link" href="mailto:office@metoptorg.ru">
+                            <img src="images/icon_e-mail_secondary.svg" alt="e-mail">
+                            office@metoptorg.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="scripts/jquery-3.5.1.js"></script>

@@ -18,21 +18,34 @@ var swiper02 = new Swiper('.slider-02 .swiper-container', {
     },
     loop: true,
     lazy: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     autoplay: {
         delay: 5000, // автоплей каждые 5с.
         disableOnInteraction: false,
     },
 
     breakpoints: {
-        1200: {
+        1024: {
             slidesPerView: 2,
         },
-        1560: {
+        1280: {
             slidesPerView: 3,
         },
-        1920: {
+        1536: {
             slidesPerView: 4,
         },
+    }
+});
+
+var swiper03 = new Swiper('.slider-03 .swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    loop: true,
+    lazy: true,
+    autoplay: {
+        delay: 5000, // автоплей каждые 5с.
+        disableOnInteraction: false,
     }
 });
