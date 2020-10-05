@@ -24,3 +24,11 @@ $(document).ready(function () {
         $('.hidden-menu').toggleClass('hide')
     })
 })
+
+// Кнопка open-aside:
+$(document).ready(function () {
+    $('.open-aside').click(function () {
+        $('.open-aside').toggleClass('active')
+        $('.content-grid aside').toggleClass('show')
+    })
+})

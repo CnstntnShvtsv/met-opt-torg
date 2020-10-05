@@ -120,7 +120,7 @@ img {
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* Page-01 */
+/* Header */
 .header-top {
   background-color: #eeeeee;
 }
@@ -462,6 +462,7 @@ img {
   transition-delay: 0.25s;
   transition-duration: 0.25s;
 }
+/* Main */
 .slider-01 .swiper-container {
   width: 100%;
   height: 660px;
@@ -773,6 +774,7 @@ img {
 .review .slider-03 .review-text .reviewers-company {
   font-style: italic;
 }
+/* Footer */
 footer {
   background-color: #242424;
   width: 100%;
@@ -852,6 +854,7 @@ footer .contacts-nav .nav-link img {
   height: 16px;
   margin-right: 20px;
 }
+/* Media */
 @media screen and (max-width: 1199.8px) {
   .slider-01 .swiper-container {
     height: 560px;
