@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preloading Styles -->
+    <link rel="preload" href="fonts/fonts.css" as="style">
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="styles/contacts.css" as="style">
+    <!-- Preloading Scripts -->
+    <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="scripts/select.js" as="script">
+    <link rel="preload" href="scripts/main.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+
+    <title>Контакты</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 500); // Время прелоадера 0.5s
+        };
+    </script>
+    <style>
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: #8390b1 url("images/tail-spin.svg") center center no-repeat;
+            background-size: 48px;
+        }
+    </style>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="items">
+                    <div class="item-left">
+                        <div class="custom-select">
+                            <select name="" id="">
+                                <option>Пермь</option>
+                                <option>Пермь</option>
+                                <option>Москва</option>
+                                <option>Севастополь</option>
+                            </select>
+                        </div>
+                        <a class="info" href="tel:+73422462544">
+                            +7 342 246-25-44
+                            <img src="images/icon_call_primary.svg" alt="telephone">
+                        </a>
+                        <div class="info">пн-пт 09:00-18:00
+                            <img src="images/icon_clock_primary.svg">
+                        </div>
+                        <a class="info"
+                            href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                            target="_blank">Култаево
+                            <img src="images/icon_lockation_primary.svg">
+                        </a>
+                    </div>
+                    <div class="item-right">
+                        <a class="social-link" href="#">
+                            <img src="images/icon_e-mail_primary.svg" alt="e-mail">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="images/icon_social-fb_primary.svg" alt="facebook">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="images/icon_social-wa_primary.svg" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="items">
+                    <img class="item-left" src="images/logo_colored.svg" alt="Логотип МетОптТорг">
+                    <div class="item-right">
+                        <a class="info" href="#">
+                            <img src="images/icon_checked_secondary.svg">
+                            Серификаты и лицензии
+                        </a>
+                        <a class="info" href="#">
+                            <img src="images/icon_checked_secondary.svg">
+                            Диллерская сеть по РФ
+                        </a>
+                        <a class="btn-call" href="#">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="nav">
+                    <a class="nav-link" href="index.html">О компании</a>
+                    <a class="nav-link" href="services.html">Услуги</a>
+                    <a class="nav-link" href="prices.html">Цена на лом</a>
+                    <a class="nav-link" href="#">Лицензия</a>
+                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link" href="#">Экология</a>
+                    <a class="nav-link active" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="container">
+                <div class="header-items">
+                    <img class="logo" src="images/logo_colored.svg" alt="Логотип МетОптТорг">
+                    <a class="btn-toggle">
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="hidden-menu hide">
+                    <div class="left-part">
+                        <div class="custom-select">
+                            <select name="" id="">
+                                <option>Пермь</option>
+                                <option>Пермь</option>
+                                <option>Москва</option>
+                                <option>Севастополь</option>
+                            </select>
+                        </div>
+
+                        <div class="contacts">
+                            <a class="info" href="tel:+73422462544">
+                                +7 342 246-25-44
+                                <img src="images/icon_call_primary.svg" alt="telephone">
+                            </a>
+                            <div class="info">пн-пт 09:00-18:00
+                                <img src="images/icon_clock_primary.svg">
+                            </div>
+                            <a class="info"
+                                href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                                target="_blank">Култаево
+                                <img src="images/icon_lockation_primary.svg">
+                            </a>
+
+                            <div class="socials">
+                                <a class="social-link" href="#">
+                                    <img src="images/icon_e-mail_primary.svg" alt="e-mail">
+                                </a>
+                                <a class="social-link" href="#">
+                                    <img src="images/icon_social-fb_primary.svg" alt="facebook">
+                                </a>
+                                <a class="social-link" href="#">
+                                    <img src="images/icon_social-wa_primary.svg" alt="whatsapp">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="certificates">
+                            <a class="info" href="#">
+                                <img src="images/icon_checked_secondary.svg">
+                                Серификаты и лицензии
+                            </a>
+                            <a class="info" href="#">
+                                <img src="images/icon_checked_secondary.svg">
+                                Диллерская сеть по РФ
+                            </a>
+                            <a class="btn-call" href="#">Связаться</a>
+                        </div>
+                    </div>
+
+                    <div class="right-part">
+                        <div class="nav">
+                            <a class="nav-link" href="index.html">О компании</a>
+                            <a class="nav-link" href="services.html">Услуги</a>
+                            <a class="nav-link" href="prices.html">Цена на лом</a>
+                            <a class="nav-link" href="#">Лицензия</a>
+                            <a class="nav-link" href="#">Отзывы</a>
+                            <a class="nav-link" href="#">Экология</a>
+                            <a class="nav-link active" href="contacts.html">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="overlay"></div>
+            <div class="banner-text">
+                <p>«МетОптТорг» <br>
+                    предоставляет услуги <br>
+                    в 11 населенных пунктах России</p>
+                <p>Центральный офис компании <br>
+                    расположен в Перми.</p>
+            </div>
+        </div>
+
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-nav">
+                    <li>
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="general-content">
+            <div class="container">
+                <h3 class="title">Контакты</h3>
+
+                <div class="contacts-nav">
+                    <div class="nav-link">
+                        <img src="images/icon_call_secondary.svg" alt="telephone">
+
+                        <a href="tel:+73422462544">+7 342 246-25-44</a>
+                    </div>
+                    <div class="nav-link">
+                        <img src="images/icon_e-mail_secondary.svg" alt="e-mail">
+
+                        <a href="mailto:office@metoptorg.ru">office@metoptorg.ru</a>
+                    </div>
+                    <div class="nav-link">
+                        <img src="images/icon_lockation_secondary.svg" alt="lockation">
+
+                        <a class="lockation"
+                            href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                            target="_blank">614520, г.&nbsp;Пермь, Пермский&nbsp;район, с.&nbsp;Култаево,
+                            ул.&nbsp;Романа&nbsp;Кашина, 89 офис&nbsp;24</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A72a37d0ee1d9de5ddcd86099ee2b556bd0f55701048758394c56854bc88963ab&amp;source=constructor"
+                width="960" height="240" frameborder="0"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-items">
+                <div class="logo-slogan">
+                    <img src="images/logo_white.svg" alt="Логотпи МетОптТорг">
+                    <p>Надежный партнер
+                        на&nbsp;профессиональном
+                        рынке вторичных металлов</p>
+                </div>
+                <div class="menu">
+                    <h3 class="title">Меню</h3>
+                    <div class="menu-nav">
+                        <a class="nav-link" href="index.html">О компании</a>
+                        <a class="nav-link" href="services.html">Услуги</a>
+                        <a class="nav-link" href="prices.html">Цена на лом</a>
+                        <a class="nav-link" href="#">Лицензия</a>
+                        <a class="nav-link" href="#">Отзывы</a>
+                        <a class="nav-link" href="#">Экология</a>
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3 class="title">Контакты</h3>
+                    <div class="contacts-nav">
+                        <a class="nav-link"
+                            href="https://yandex.ru/maps/11108/perm-krai/house/ulitsa_romana_kashina_89/YUwYfwRhQEICQFttfXR4cn5gZw==/?ll=55.931976%2C57.893233&z=16.66"
+                            target="_blank">
+                            <img src="images/icon_lockation_secondary.svg" alt="lockation">
+                            614520, г. Пермь, Пермский район,
+                            с. Култаево, ул. Романа Кашина, 89 (офис 24)
+                        </a>
+                        <a class="nav-link" href="tel:+73422462544">
+                            <img src="images/icon_call_secondary.svg" alt="telephone">
+                            +7 342 246-25-44
+                        </a>
+                        <a class="nav-link" href="mailto:office@metoptorg.ru">
+                            <img src="images/icon_e-mail_secondary.svg" alt="e-mail">
+                            office@metoptorg.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- "Back to Top" Button -->
+    <a href="" id="back-to-top">
+        <img src="images/icon_arrow-top_primary.svg" alt="кнопка наверх">
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/select.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
