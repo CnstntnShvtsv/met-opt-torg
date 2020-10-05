@@ -32,3 +32,11 @@ $(document).ready(function () {
         $('.content-grid aside').toggleClass('show')
     })
 })
+
+// Меню навигации
+$(document).ready(function () {
+    $('header .nav .nav-link').click(function () {
+        $('header .nav .nav-link').removeClass('active')
+        $(this).toggleClass('active')
+    })
+})
