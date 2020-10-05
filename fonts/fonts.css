@@ -10,30 +10,6 @@
     font-display: swap;
 }
 
-/* @font-face {
-    font-family: 'Lato';
-    src: url('Lato-Medium.eot');
-    src: url('Lato-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Lato-Medium.woff2') format('woff2'),
-        url('Lato-Medium.woff') format('woff'),
-        url('Lato-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('Lato-Semibold.eot');
-    src: url('Lato-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('Lato-Semibold.woff2') format('woff2'),
-        url('Lato-Semibold.woff') format('woff'),
-        url('Lato-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-} */
-
 @font-face {
     font-family: 'Lato';
     src: url('Lato-Bold.eot');
@@ -45,18 +21,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-/* @font-face {
-    font-family: 'Lato';
-    src: url('Lato-Heavy.eot');
-    src: url('Lato-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('Lato-Heavy.woff2') format('woff2'),
-        url('Lato-Heavy.woff') format('woff'),
-        url('Lato-Heavy.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-} */
 
 @font-face {
     font-family: 'Lato';
