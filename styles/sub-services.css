@@ -19,23 +19,6 @@
   height: 100%;
   background-color: rgba(72, 94, 136, 0.7);
 }
-.banner .banner-text {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-  z-index: 1;
-}
-.banner .banner-text p {
-  width: 100%;
-  max-width: 832px;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 700;
-}
-.banner .banner-text p + p {
-  margin-top: 32px;
-}
 .breadcrumb {
   background-color: #eeeeee;
   width: 100%;

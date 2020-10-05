@@ -8,7 +8,7 @@
     <!-- Preloading Styles -->
     <link rel="preload" href="fonts/fonts.css" as="style">
     <link rel="preload" href="styles/main.css" as="style">
-    <link rel="preload" href="styles/prices.css" as="style">
+    <link rel="preload" href="styles/sub-prices.css" as="style">
     <!-- Preloading Scripts -->
     <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
     <link rel="preload" href="scripts/select.js" as="script">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/prices.css">
+    <link rel="stylesheet" href="styles/sub-prices.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -247,118 +247,174 @@
                     <li>
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
-                    <li>Цена на лом</li>
+                    <li>
+                        <a class="nav-link" href="prices.html">Цена на лом</a>
+                    </li>
+                    <li>Цены на черный лом</li>
                 </ul>
             </div>
         </div>
 
+        <!-- Подсказка "свайп" -->
+        <div class="swipe-box">
+            <div class="swipe"></div>
+        </div>
+
         <div class="general-content">
             <div class="container">
-                <p>«МетОптТорг» оказывает услуги по вывозу, резке, транспортировке, переработке и утилизации вторичного
-                    металла, кабеля, труб.
-                    Мы сотрудничаем с крупными предприятиями - «Лукойл», «Газпромнефть», «Роснефть» и другими. Вывозим
-                    любой объем вторичного
-                    металла с производственных площадок наших заказчиков точно в срок, перерабатываем и утилизируем его
-                    в соответствии с требованиями и стандартами охраны окружающей среды.</p>
-                <p>Мы также работаем с физическими лицами. Позвоните нам - оценим стоимость вторичного металла удаленно
-                    или приедем
-                    для точной оценки его объема. После согласования условий - оплатим стоимость, предоставим финансовые
-                    документы,
-                    обеспечим вывоз металлолома.</p>
-                <div class="price-items">
-                    <div class="item">
-                        <div class="item-overflow">
-                            <div class="title">
-                                <h3>Лом черных металлов</h3>
-                            </div>
-                            <ul>
-                                <li>Железо</li>
-                                <li>Чугун</li>
-                                <li>Нержавейка</li>
-                                <li>Сталь</li>
-                            </ul>
-                            <a class="btn-show-price" href="sub-prices.html">Посмотреть цены</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-overflow">
-                            <div class="title">
-                                <h3>Лом цветных металлов</h3>
-                            </div>
-                            <ul>
-                                <li>Бронза</li>
-                                <li>Медь</li>
-                                <li>Алюминий</li>
-                                <li>Латунь</li>
-                            </ul>
-                            <a class="btn-show-price" href="#">Посмотреть цены</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-overflow">
-                            <div class="title">
-                                <h3>Трубы</h3>
-                            </div>
-                            <ul>
-                                <li>Трубы НКТ</li>
-                                <li>Трубы Б/У</li>
-                            </ul>
-                            <a class="btn-show-price" href="#">Посмотреть цены</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-overflow">
-                            <div class="title">
-                                <h3>Кабель</h3>
-                            </div>
-                            <ul>
-                                <li>Кабель нефтепогружной</li>
-                                <li>Кабель Б/У</li>
-                            </ul>
-                            <a class="btn-show-price" href="#">Посмотреть цены</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-overflow">
-                            <div class="title">
-                                <h3>Штанги насосные</h3>
-                            </div>
+                <h3>Цены на черный металл</h3>
 
-                            <a class="btn-show-price" href="#">Посмотреть цены</a>
-                        </div>
+                <div class="price-table">
+                    <div class="table-header">
+                        <p>Группа лома</p>
+                    </div>
+                    <div class="table-header col-left">
+                        <p>Состав лома</p>
+                    </div>
+                    <div class="table-header">
+                        <p>Засор стандарт.,%</p>
+                    </div>
+                    <div class="table-header">
+                        <p>Цена, рублей/тонну</p>
+                    </div>
+                    <div class="table-white">
+                        <p>3А</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Сталь, габаритные размеры не более 1500х500х500мм,
+                            толщина стенки от 4 мм</p>
+                    </div>
+                    <div class="table-white">
+                        <p>6</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-light">
+                        <p>5А</p>
+                    </div>
+                    <div class="table-light col-left">
+                        <p>Сталь, габаритные размеры не регламентируются,
+                            толщина стенки от 4мм</p>
+                    </div>
+                    <div class="table-light">
+                        <p>6</p>
+                    </div>
+                    <div class="table-light">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-white">
+                        <p>12А</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Сталь (жесть), толщина менее 4мм</p>
+                    </div>
+                    <div class="table-white">
+                        <p>6</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-light">
+                        <p>12А1</p>
+                    </div>
+                    <div class="table-light col-left">
+                        <p>Автолом, белая жесть (холодильники, стиральные
+                            машины, прочий бытовой лом)</p>
+                    </div>
+                    <div class="table-light">
+                        <p>25</p>
+                    </div>
+                    <div class="table-light">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-white">
+                        <p>12АС</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Сталь оцинкованная</p>
+                    </div>
+                    <div class="table-white">
+                        <p>7</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-light">
+                        <p>13А</p>
+                    </div>
+                    <div class="table-light col-left">
+                        <p>Арматура диаметром более 8мм</p>
+                    </div>
+                    <div class="table-light">
+                        <p>7</p>
+                    </div>
+                    <div class="table-light">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-white">
+                        <p>13А1</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Путаная арматура, проволока диаметром менее 8мм</p>
+                    </div>
+                    <div class="table-white">
+                        <p>7</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-light">
+                        <p>16А</p>
+                    </div>
+                    <div class="table-light col-left">
+                        <p>Стружка стальная</p>
+                    </div>
+                    <div class="table-light">
+                        <p>5</p>
+                    </div>
+                    <div class="table-light">
+                        <p>5500</p>
+                    </div>
+                    <div class="table-white">
+                        <p>17А</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Габаритный чугун, размеры не более 800х500х500мм</p>
+                    </div>
+                    <div class="table-white">
+                        <p>6</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-light">
+                        <p>19А</p>
+                    </div>
+                    <div class="table-light col-left">
+                        <p>Габаритный чугун с содержанием фосфора (бытовой лом: батареи отопления, раковины, ванны)</p>
+                    </div>
+                    <div class="table-light">
+                        <p>6</p>
+                    </div>
+                    <div class="table-light">
+                        <p>9000</p>
+                    </div>
+                    <div class="table-white">
+                        <p>20А</p>
+                    </div>
+                    <div class="table-white col-left">
+                        <p>Негабаритный чугунный лом</p>
+                    </div>
+                    <div class="table-white">
+                        <p>6</p>
+                    </div>
+                    <div class="table-white">
+                        <p>9000</p>
                     </div>
                 </div>
 
-                <h3>Почему сотрудничать с «МетОптТорг» – выгодно?</h3>
-                <div class="profitable-items">
-                    <div class="item-text">
-                        <ul>
-                            <li>Проведем демонтаж и резку конструкций, погрузим и вывезем
-                                вторичный металл для дальнейшей переработки или утилизации.</li>
-                            <li>Используем профессиональное оборудование и технику
-                                (в парке «МетОптТорг» - более 80 единиц транспорта).</li>
-                            <li>Все работы выполняют специалисты с лицензиями и допусками
-                                к работам (согласно законодательству РФ).</li>
-                            <li>Предлагаем рыночные цены на закупку лома для частных лиц
-                                и закупаем большие объемы металла по фиксированным ценам
-                                (без учета «просадок» рыночной цены) у юридических лиц. </li>
-                            <li>Оплачиваем закупку без задержек. Предоставляем документы
-                                по сделке в соответствии с законодательством РФ.</li>
-                        </ul>
-                    </div>
-                    <div class="item-media">
-                        <img src="images/sm-02.jpg" alt="">
-                        <div class="btns">
-                            <a class="btn-price" href="#">
-                                <span>Цены</span>
-                            </a>
-                            <a class="btn-download" href="#">
-                                <span>Скачать<br>
-                                    прайс-лист</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a class="btn-back" href="prices.html">&larr; Вернуться</a>
             </div>
         </div>
     </main>

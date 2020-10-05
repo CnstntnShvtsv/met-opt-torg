@@ -253,4 +253,14 @@
   .banner .banner-text p {
     font-size: 21px;
   }
+  .breadcrumb ul {
+    list-style: none;
+    font-size: 12px;
+  }
+  .breadcrumb li + li {
+    margin-left: 10px;
+  }
+  .breadcrumb li + li::before {
+    margin-right: 10px;
+  }
 }
