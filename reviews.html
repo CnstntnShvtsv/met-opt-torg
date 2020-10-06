@@ -7,18 +7,22 @@
 
     <!-- Preloading Styles -->
     <link rel="preload" href="fonts/fonts.css" as="style">
+    <link rel="preload" href="swiper/swiper-bundle.css" as="style">
     <link rel="preload" href="styles/main.css" as="style">
-    <link rel="preload" href="styles/sub-services.css" as="style">
+    <link rel="preload" href="styles/reviews.css" as="style">
     <!-- Preloading Scripts -->
     <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="swiper/swiper-bundle.js" as="script">
+    <link rel="preload" href="scripts/slider.js" as="script">
     <link rel="preload" href="scripts/select.js" as="script">
     <link rel="preload" href="scripts/main.js" as="script">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Styles -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/sub-services.css">
+    <link rel="stylesheet" href="styles/reviews.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -41,7 +45,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
 
-    <title>Услуги</title>
+    <title>Отзывы</title>
 </head>
 
 <body>
@@ -150,10 +154,10 @@
             <div class="container">
                 <div class="nav">
                     <a class="nav-link" href="index.html">О компании</a>
-                    <a class="nav-link active" href="services.html">Услуги</a>
+                    <a class="nav-link" href="services.html">Услуги</a>
                     <a class="nav-link" href="prices.html">Цена на лом</a>
                     <a class="nav-link" href="license.html">Лицензия</a>
-                    <a class="nav-link" href="reviews.html">Отзывы</a>
+                    <a class="nav-link active" href="reviews.html">Отзывы</a>
                     <a class="nav-link" href="#">Экология</a>
                     <a class="nav-link" href="contacts.html">Контакты</a>
                 </div>
@@ -223,10 +227,10 @@
                     <div class="right-part">
                         <div class="nav">
                             <a class="nav-link" href="index.html">О компании</a>
-                            <a class="nav-link active" href="services.html">Услуги</a>
+                            <a class="nav-link" href="services.html">Услуги</a>
                             <a class="nav-link" href="prices.html">Цена на лом</a>
                             <a class="nav-link" href="license.html">Лицензия</a>
-                            <a class="nav-link" href="reviews.html">Отзывы</a>
+                            <a class="nav-link active" href="reviews.html">Отзывы</a>
                             <a class="nav-link" href="#">Экология</a>
                             <a class="nav-link" href="contacts.html">Контакты</a>
                         </div>
@@ -237,63 +241,76 @@
     </header>
 
     <main>
-        <div class="banner">
-            <div class="overlay"></div>
-        </div>
         <div class="breadcrumb">
             <div class="container">
                 <ul class="breadcrumb-nav">
                     <li>
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="services.html">Услуги</a>
-                    </li>
-                    <li>Демонтаж</li>
+                    <li>Отзывы</li>
                 </ul>
             </div>
         </div>
 
         <div class="general-content">
-            <div class="container content-grid">
-                <a class="open-aside">
-                    <span></span>
-                </a>
-                <aside>
-                    <h3 class="title">Демонтаж</h3>
-                    <a class="nav-link" href="#">Вывоз</a>
-                    <a class="nav-link" href="#">Переработка</a>
-                    <a class="nav-link" href="#">Утилизация</a>
-                    <a class="btn-call" href="#">Связаться с нами</a>
-                </aside>
-                <article>
-                    <img src="images/sm-04.jpg" alt="Металлоуборочная техника">
-                    <div class="sub-header">
-                        <h3>Демонтаж</h3>
-                        <div class="btns">
-                            <a class="btn-price" href="#">Цены</a>
-                            <a class="btn-license" href="#">Лицензии</a>
+            <div class="overlay"></div>
+            <div class="container content-wrapper">
+                <h3>Отзывы</h3>
+                <div class="slider-04">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="review-link-01">
+                                <img src="images/review-preview-01.jpg" alt="отзыв о компании">
+                            </div>
+                            <div class="swiper-slide" id="review-link-02">
+                                <img src="images/review-preview-02.jpg" alt="отзыв о компании">
+                            </div>
+                            <div class="swiper-slide" id="review-link-03">
+                                <img src="images/review-preview-03.jpg" alt="отзыв о компании">
+                            </div>
+                            <div class="swiper-slide" id="review-link-04">
+                                <img src="images/review-preview-04.jpg" alt="отзыв о компании">
+                            </div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="item">
-                        <p>Специалисты с опытом работы, профессиональное оборудование
-                            и спецтранспорт – 3 составляющих безопасного и оперативного выполнения работ по демонтажу
-                            металлолома.</p>
-                        <img src="images/xs-01.jpg" alt="Резка металлолома">
-                    </div>
-                    <div class="item">
-                        <p>В автопарке компании – более 80 единиц специализированной
-                            техники. В команде – 100 сертифицированных специалистов.
-                            Наши сотрудники прошли обучение по работе на промышленных объектах, сдали экзамены и
-                            получили лицензии. Поэтому
-                            выполняют работе ответственно и профессионально.
-                            В сотрудничестве с нами – можно быть уверенным.</p>
-                        <img src="images/xs-02.jpg" alt="Металлоуборочная техника">
-                    </div>
-                    <a class="btn-back" href="services.html">&larr; Вернуться</a>
-                </article>
+                </div>
             </div>
         </div>
+
+        <div id="review-popup-01" class="bg-overlay">
+            <div class="wrapper">
+                <a class="close-btn">
+                    <img src="images/btn_close.svg">
+                </a>
+                <img src="images/review-01.jpg" alt="Отзыв о компании"></div>
+        </div>
+
+        <div id="review-popup-02" class="bg-overlay">
+            <div class="wrapper">
+                <a class="close-btn">
+                    <img src="images/btn_close.svg">
+                </a>
+                <img src="images/review-02.jpg" alt="Отзыв о компании"></div>
+        </div>
+
+        <div id="review-popup-03" class="bg-overlay">
+            <div class="wrapper">
+                <a class="close-btn">
+                    <img src="images/btn_close.svg">
+                </a>
+                <img src="images/review-03.jpg" alt="Отзыв о компании"></div>
+        </div>
+
+        <div id="review-popup-04" class="bg-overlay">
+            <div class="wrapper">
+                <a class="close-btn">
+                    <img src="images/btn_close.svg">
+                </a>
+                <img src="images/review-04.jpg" alt="Отзыв о компании"></div>
+        </div>
+
     </main>
 
     <footer>
@@ -348,6 +365,8 @@
 
     <!-- Scripts -->
     <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="swiper/swiper-bundle.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="scripts/select.js"></script>
     <script src="scripts/main.js"></script>
 </body>

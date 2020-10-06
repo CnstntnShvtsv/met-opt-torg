@@ -1,0 +1,223 @@
+// Custom Color Palette:
+@color-primary: #142248;
+@color-secondary: #485e88;
+@color-tertiary: #8390b1;
+@color-quaternary: #bcc3d7;
+
+@color-white: #ffffff;
+@color-lighter: #f6f6f6;
+@color-light: #eeeeee;
+@color-text: #666666;
+@color-dark: #434343;
+@color-darker: #242424;
+@color-black: #000000;
+
+/* Main */
+.breadcrumb {
+    background-color: @color-light;
+    width: 100%;
+
+    .breadcrumb-nav {
+        padding: 22px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+    }
+
+    li+li {
+        color: @color-text;
+        margin-left: 12px;
+
+        &::before {
+            color: @color-text;
+            content: ">";
+            margin-right: 12px;
+        }
+    }
+
+    .nav-link {
+        color: @color-text;
+        cursor: pointer;
+    }
+
+    .nav-link:hover {
+        color: @color-tertiary;
+        text-decoration: underline;
+    }
+
+    .nav-link:active {
+        color: @color-primary;
+    }
+}
+
+.general-content {
+    background-image: url("../images/lg-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0;
+
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: fade(@color-tertiary, 90%);
+    }
+
+    .content-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h3 {
+        width: 100%;
+        color: @color-white;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 40px 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .slider-04 {
+        width: 100%;
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .swiper-pagination-bullet,
+        .swiper-pagination-bullet-active {
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: transparent;
+            border: 2px solid @color-white;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: @color-white;
+            border: 2px solid @color-white;
+        }
+
+        .swiper-slide {
+            width: 25%;
+            padding-bottom: 40px;
+        }
+
+        img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: brightness(90%);
+            transition: all 0.1s ease;
+
+            &:hover {
+                filter: brightness(100%);
+                box-shadow: 0 5px 10px rgba(63, 48, 48, 0.25);
+                transition: all 0.1s ease;
+            }
+
+            &:active {
+                filter: brightness(90%);
+                box-shadow: none;
+                transition: all 0.1s ease;
+            }
+        }
+
+    }
+}
+
+.bg-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0 20px;
+
+    overflow-y: scroll;
+
+    .wrapper {
+        margin: 40px auto;
+        width: 100%;
+        max-width: 960px;
+
+        position: relative;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 9;
+        background-color: @color-primary;
+        padding: 8px;
+
+        &:hover {
+            background-color: @color-secondary;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 960px;
+        height: auto;
+    }
+}
+
+/* Media */
+@media screen and (max-width: 991.8px) {}
+
+@media screen and (max-width: 767.8px) {}
+
+@media screen and (max-width: 575.8px) {}
+
+@media screen and (max-width: 359.8px) {
+    .breadcrumb {
+        ul {
+            list-style: none;
+            font-size: 12px;
+        }
+
+        li+li {
+            margin-left: 10px;
+
+            &::before {
+                margin-right: 10px;
+            }
+        }
+    }
+}

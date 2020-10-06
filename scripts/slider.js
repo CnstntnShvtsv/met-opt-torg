@@ -61,3 +61,30 @@ var swiper03 = new Swiper('.slider-03 .swiper-container', {
         disableOnInteraction: false,
     }
 });
+
+var swiper04 = new Swiper('.slider-04 .swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    loop: true,
+    lazy: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 5000, // автоплей каждые 5с.
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        },
+    }
+});

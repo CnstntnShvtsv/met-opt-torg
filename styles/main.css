@@ -646,9 +646,6 @@ img {
   left: 0;
 }
 .direction .slider-02 .swiper-slide {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 25%;
   position: relative;
 }

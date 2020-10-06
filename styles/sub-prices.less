@@ -1,0 +1,260 @@
+// Custom Color Palette:
+@color-primary: #142248;
+@color-secondary: #485e88;
+@color-tertiary: #8390b1;
+@color-quaternary: #bcc3d7;
+
+@color-white: #ffffff;
+@color-lighter: #f6f6f6;
+@color-light: #eeeeee;
+@color-text: #666666;
+@color-dark: #434343;
+@color-darker: #242424;
+@color-black: #000000;
+
+/* Main */
+.breadcrumb {
+    background-color: @color-light;
+    width: 100%;
+
+    .breadcrumb-nav {
+        padding: 22px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    li+li {
+        color: @color-text;
+        margin-left: 12px;
+
+        &::before {
+            color: @color-text;
+            content: ">";
+            margin-right: 12px;
+        }
+    }
+
+    .nav-link {
+        color: @color-text;
+        cursor: pointer;
+    }
+
+    .nav-link:hover {
+        color: @color-tertiary;
+        text-decoration: underline;
+    }
+
+    .nav-link:active {
+        color: @color-primary;
+    }
+}
+
+.swipe-box {
+    visibility: hidden;
+    position: absolute;
+    top: 334px;
+    right: 40px;
+    z-index: 1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    .swipe {
+        width: 25px;
+        height: 25px;
+        background-color: @color-primary;
+        border-radius: 50%;
+        position: relative;
+        animation-name: swipe;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes swipe {
+        0% {
+            opacity: 1;
+            width: 25px;
+            height: 25px;
+            right: 0px;
+            top: 0px;
+        }
+
+        20% {
+            opacity: 0.5;
+            width: 20px;
+            height: 20px;
+            right: 0px;
+            top: 0px;
+        }
+
+        40% {
+            opacity: 0.5;
+            width: 20px;
+            height: 20px;
+            right: 80px;
+            top: 0px;
+        }
+
+        60% {
+            opacity: 1;
+            width: 25px;
+            height: 25px;
+            right: 80px;
+            top: 0px;
+        }
+
+        80% {
+            opacity: 0;
+            width: 25px;
+            height: 25px;
+            right: 80px;
+            top: 0px;
+        }
+
+        100% {
+            opacity: 0;
+            width: 25px;
+            height: 25px;
+            right: 0px;
+            top: 0px;
+        }
+    }
+}
+
+.general-content {
+    h3 {
+        margin-top: 40px;
+        color: @color-primary;
+        font-size: 30px;
+        font-weight: 700px;
+    }
+
+    .price-table {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: minmax(144px, 1.5fr) minmax(400px, 4.5fr) minmax(192px, 2fr) minmax(192px, 2fr);
+        grid-template-rows: repeat(12, 64px);
+
+        .table-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+            background-color: @color-tertiary;
+            color: @color-white;
+            font-weight: 700;
+        }
+
+        .table-header+.table-header {
+            border-left: 2px solid @color-light;
+        }
+
+        .table-white {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+            color: black;
+            border-bottom: 2px solid @color-light;
+        }
+
+        .table-white+.table-white {
+            border-left: 2px solid @color-light;
+        }
+
+        .table-light {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+            background-color: @color-light;
+            color: black;
+            border-bottom: 2px solid @color-light;
+        }
+
+        .table-light+.table-light {
+            border-left: 2px solid @color-light;
+        }
+
+        .table-header.col-left,
+        .table-white.col-left,
+        .table-light.col-left {
+            justify-content: flex-start;
+            text-align: left;
+            padding: 0 20px;
+        }
+    }
+
+    .btn-back {
+        display: inline-block;
+        width: 100%;
+        margin: 40px auto;
+        color: @color-primary;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover {
+            color: @color-secondary;
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: @color-primary;
+        }
+    }
+}
+
+/* Media */
+@media screen and (max-width: 991.8px) {
+    .swipe-box {
+        visibility: visible;
+    }
+
+    .general-content {
+        .price-table {
+            overflow-x: scroll;
+        }
+    }
+}
+
+/* Media */
+@media screen and (max-width: 412.8px) {
+    .swipe-box {
+        top: 370px;
+    }
+}
+
+@media screen and (max-width: 359.8px) {
+    .breadcrumb {
+        ul {
+            list-style: none;
+            font-size: 12px;
+        }
+
+        li+li {
+            margin-left: 10px;
+
+            &::before {
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+/* Main */
+.breadcrumb {
+  background-color: #eeeeee;
+  width: 100%;
+}
+.breadcrumb .breadcrumb-nav {
+  padding: 22px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.breadcrumb ul {
+  list-style: none;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.breadcrumb li + li {
+  color: #666666;
+  margin-left: 12px;
+}
+.breadcrumb li + li::before {
+  color: #666666;
+  content: ">";
+  margin-right: 12px;
+}
+.breadcrumb .nav-link {
+  color: #666666;
+  cursor: pointer;
+}
+.breadcrumb .nav-link:hover {
+  color: #8390b1;
+  text-decoration: underline;
+}
+.breadcrumb .nav-link:active {
+  color: #142248;
+}
+.general-content h3 {
+  margin: 40px 0;
+  color: #142248;
+  font-size: 30px;
+  font-weight: 700px;
+}
+.general-content .license-item {
+  padding-left: 40px;
+  padding-bottom: 48px;
+  position: relative;
+}
+.general-content .license-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.general-content .license-item a img {
+  width: 24px;
+  height: 24px;
+}
+.general-content .license-item h4 {
+  color: #142248;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.general-content .license-item p {
+  margin-top: 12px;
+}
+/* Media */
+@media screen and (max-width: 359.8px) {
+  .breadcrumb ul {
+    list-style: none;
+    font-size: 12px;
+  }
+  .breadcrumb li + li {
+    margin-left: 10px;
+  }
+  .breadcrumb li + li::before {
+    margin-right: 10px;
+  }
+}

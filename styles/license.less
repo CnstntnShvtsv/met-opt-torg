@@ -1,0 +1,113 @@
+// Custom Color Palette:
+@color-primary: #142248;
+@color-secondary: #485e88;
+@color-tertiary: #8390b1;
+@color-quaternary: #bcc3d7;
+
+@color-white: #ffffff;
+@color-lighter: #f6f6f6;
+@color-light: #eeeeee;
+@color-text: #666666;
+@color-dark: #434343;
+@color-darker: #242424;
+@color-black: #000000;
+
+/* Main */
+.breadcrumb {
+    background-color: @color-light;
+    width: 100%;
+
+    .breadcrumb-nav {
+        padding: 22px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    li+li {
+        color: @color-text;
+        margin-left: 12px;
+
+        &::before {
+            color: @color-text;
+            content: ">";
+            margin-right: 12px;
+        }
+    }
+
+    .nav-link {
+        color: @color-text;
+        cursor: pointer;
+    }
+
+    .nav-link:hover {
+        color: @color-tertiary;
+        text-decoration: underline;
+    }
+
+    .nav-link:active {
+        color: @color-primary;
+    }
+}
+
+.general-content {
+    h3 {
+        margin: 40px 0;
+        color: @color-primary;
+        font-size: 30px;
+        font-weight: 700px;
+    }
+
+    .license-item {
+        padding-left: 40px;
+        padding-bottom: 48px;
+        position: relative;
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        h4 {
+            color: @color-primary;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 12px;
+        }
+    }
+}
+
+/* Media */
+@media screen and (max-width: 359.8px) {
+    .breadcrumb {
+        ul {
+            list-style: none;
+            font-size: 12px;
+        }
+
+        li+li {
+            margin-left: 10px;
+
+            &::before {
+                margin-right: 10px;
+            }
+        }
+    }
+}

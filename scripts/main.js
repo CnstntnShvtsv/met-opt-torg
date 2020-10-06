@@ -40,3 +40,32 @@ $(document).ready(function () {
         $(this).toggleClass('active')
     })
 })
+
+// Открыть отзыв по клику на превью
+$(document).ready(function () {
+    $('.swiper-slide#review-link-01').click(function () {
+        $('#review-popup-01').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.swiper-slide#review-link-02').click(function () {
+        $('#review-popup-02').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.swiper-slide#review-link-03').click(function () {
+        $('#review-popup-03').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.swiper-slide#review-link-04').click(function () {
+        $('#review-popup-04').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+
+    // Открыть отзыв по клику на крестик
+    $('.close-btn').click(function () {
+        $('.bg-overlay').fadeOut();
+        $('body').css('overflow', 'auto');
+    });
+})
