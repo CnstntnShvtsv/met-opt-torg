@@ -56,23 +56,9 @@
 }
 
 .general-content {
-    background-image: url("../images/lg-02.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: @color-white;
     width: 100%;
     padding: 40px 0;
-
-    position: relative;
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: fade(@color-tertiary, 90%);
-    }
 
     .content-wrapper {
         width: 100%;
@@ -84,11 +70,10 @@
 
     h3 {
         width: 100%;
-        color: @color-white;
+        color: @color-primary;
         font-size: 30px;
         font-weight: 700;
-        margin: 40px 0;
-        text-align: center;
+        margin-bottom: 40px;
         z-index: 1;
     }
 
@@ -113,13 +98,13 @@
 
         .swiper-pagination-bullet {
             background-color: transparent;
-            border: 2px solid @color-white;
+            border: 2px solid @color-tertiary;
             opacity: 1;
         }
 
         .swiper-pagination-bullet-active {
-            background-color: @color-white;
-            border: 2px solid @color-white;
+            background-color: @color-secondary;
+            border: 2px solid @color-secondary;
         }
 
         .swiper-slide {
@@ -127,11 +112,8 @@
             padding-bottom: 40px;
         }
 
-        img {
+        figure {
             cursor: pointer;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
             filter: brightness(90%);
             transition: all 0.1s ease;
 
@@ -148,6 +130,17 @@
             }
         }
 
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        figcaption {
+            padding: 8px 4px;
+            color: @color-primary;
+            font-size: 14px;
+        }
     }
 }
 

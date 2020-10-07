@@ -34,21 +34,9 @@
   color: #142248;
 }
 .general-content {
-  background-image: url("../images/lg-02.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
   width: 100%;
   padding: 40px 0;
-  position: relative;
-}
-.general-content .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(131, 144, 177, 0.9);
 }
 .general-content .content-wrapper {
   width: 100%;
@@ -59,11 +47,10 @@
 }
 .general-content h3 {
   width: 100%;
-  color: #ffffff;
+  color: #142248;
   font-size: 30px;
   font-weight: 700;
-  margin: 40px 0;
-  text-align: center;
+  margin-bottom: 40px;
   z-index: 1;
 }
 .general-content .slider-04 {
@@ -84,34 +71,41 @@
 }
 .general-content .slider-04 .swiper-pagination-bullet {
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #8390b1;
   opacity: 1;
 }
 .general-content .slider-04 .swiper-pagination-bullet-active {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: #485e88;
+  border: 2px solid #485e88;
 }
 .general-content .slider-04 .swiper-slide {
   width: 25%;
   padding-bottom: 40px;
 }
-.general-content .slider-04 img {
+.general-content .slider-04 figure {
   cursor: pointer;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
   filter: brightness(90%);
   transition: all 0.1s ease;
 }
-.general-content .slider-04 img:hover {
+.general-content .slider-04 figure:hover {
   filter: brightness(100%);
   box-shadow: 0 5px 10px rgba(63, 48, 48, 0.25);
   transition: all 0.1s ease;
 }
-.general-content .slider-04 img:active {
+.general-content .slider-04 figure:active {
   filter: brightness(90%);
   box-shadow: none;
   transition: all 0.1s ease;
+}
+.general-content .slider-04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.general-content .slider-04 figcaption {
+  padding: 8px 4px;
+  color: #142248;
+  font-size: 14px;
 }
 .bg-overlay {
   display: none;
